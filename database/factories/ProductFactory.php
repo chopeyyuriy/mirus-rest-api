@@ -1,0 +1,35 @@
+<?php
+
+namespace Database\Factories;
+
+use App\Models\User;
+use App\Models\Product;
+use Illuminate\Database\Eloquent\Factories\Factory;
+
+class ProductFactory extends Factory
+{
+    /**
+     * The name of the factory's corresponding model.
+     *
+     * @var string
+     */
+    protected $model = Product::class;
+
+    /**
+     * Define the model's default state.
+     *
+     * @return array
+     */
+    public function definition()
+    {
+        return [
+            //
+            'user_id'=> User::factory(),
+            'sku' => $this->faker->unique()->name(),
+            'title' => $this->faker->title(),
+            'long_disc' => $this->faker->paragraph(),
+            'features' => $this->faker->paragraph(),
+            'sale_price' => $this->faker->randomNumber(),            
+        ];
+    }
+}

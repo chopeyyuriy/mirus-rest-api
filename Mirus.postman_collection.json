@@ -1,0 +1,2550 @@
+{
+	"info": {
+		"_postman_id": "a31ec32d-e8bc-4e8b-bae1-bc79270596fe",
+		"name": "Mirus",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Category / Auction / Product",
+			"item": [
+				{
+					"name": "Get categories",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://{{site}}/api/auth/category/get-categories?page=1&limit=15",
+							"protocol": "http",
+							"host": [
+								"{{site}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"category",
+								"get-categories"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "limit",
+									"value": "15"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get auctions",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://{{site}}/api/auth/auction/get-auctions?limit=15&page=1",
+							"protocol": "http",
+							"host": [
+								"{{site}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"auction",
+								"get-auctions"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "15"
+								},
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get products list",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://{{site}}/api/auth/product/get-products-list?limit=15&page=1",
+							"protocol": "http",
+							"host": [
+								"{{site}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"product",
+								"get-products-list"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "15"
+								},
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get products details",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiOTc1NDlhZjIyNDk4NmViMjY0Mjk1NmNhMTRhYTBhMjg5YmU2NjAwMGJhODQ4YTE5Nzk5MWU4YWI1NWQ3NjcyZmE5NDQ0MjRhMzQxMjEwZGUiLCJpYXQiOjE2MjU1NjA5MTQuNzA1OTU1LCJuYmYiOjE2MjU1NjA5MTQuNzA1OTcsImV4cCI6MTY1NzA5NjkxNC42ODUyOSwic3ViIjoiNDUiLCJzY29wZXMiOltdfQ.LfC_b5r8Hk5cnvENJZ6uQ0J_Djt7P-UDgmNYbo5S4iWmm43k3dHd4AKwYNw1jxbF0-3ja3M7Sc9H28MQe8tHo3kqbrDzZZHtGLttfMaWvkhm5w0-eDyVuvFbmGDsSkJLuYZkfs_R5V1oyaeut8V56jesIozjuvGMJpiyhtRwT9JPSFt8J0_LCv7VFyIdM6cMsq9j0F6KavIsUd31v0A6ERb0fms8lEznfNnJ6Z1EdUC-9tfN1Ry0XuoiOaZK7rOf-t1UTk_7lqHM7B-l2HTDIt0KBNX2s1fXifhBrg5xdT_0VQFVPnyMVJDz9g6omGEVXahnq0IfeJwRGeRkS5Gh1txex-aT9aw-J5AVq2I_WVUj3xaG6axu8IQZhAjzyyiXFQLWgM8UUT8R5nHAgTISYTfKRwUQUw0xcmI-0c3my7YSRoqSTF2i0U2wRaVvZKuG-YDTOtWy_QFNXk55NQfRboPU9mddBEbmK1BWw-mUGzwFMAPSwENJWNFgXcB-wH6Hyv-Qlo8yHNYU9MeBuS8xsKdMoynV9RbGxEZ8L4bb_svYEuRMT9hhlzq6wqITKnjQ27jJnTojaR9AccPpAy9buFQilx_LN7WrUmK6qeiEh51Q9zF16XYxgaK-ApkGp6s6zvNEXVQcaG_6G_XsgDsnXIhhFgiXL44hjCsbwAh1V7Q",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://{{site}}/api/auth/product/get-product-details?product_id=38",
+							"protocol": "http",
+							"host": [
+								"{{site}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"product",
+								"get-product-details"
+							],
+							"query": [
+								{
+									"key": "product_id",
+									"value": "38"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Filter",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://{{site}}/api/auth/product/get-filters",
+							"protocol": "http",
+							"host": [
+								"{{site}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"product",
+								"get-filters"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Filter Products",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{site}}/api/auth/product/get-products-filters?featured=on",
+							"protocol": "http",
+							"host": [
+								"{{site}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"product",
+								"get-products-filters"
+							],
+							"query": [
+								{
+									"key": "category_id[0]",
+									"value": "1",
+									"disabled": true
+								},
+								{
+									"key": "condition_type",
+									"value": "new",
+									"disabled": true
+								},
+								{
+									"key": "sale_type",
+									"value": "auction",
+									"disabled": true
+								},
+								{
+									"key": "min_price",
+									"value": "150",
+									"disabled": true
+								},
+								{
+									"key": "max_price",
+									"value": "1000",
+									"disabled": true
+								},
+								{
+									"key": "featured",
+									"value": "on"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Sign-up endpoint",
+			"item": [
+				{
+					"name": "Get user profile",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://{{site}}/api/auth/get-user-profile?user_id=45",
+							"protocol": "http",
+							"host": [
+								"{{site}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"get-user-profile"
+							],
+							"query": [
+								{
+									"key": "user_id",
+									"value": "45"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update user Profile",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "avatar",
+									"value": "data:image/png;base64,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",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://{{site}}/api/auth/update-user-profile?user_id=5&first_name=User1499&last_name=Berder&password=jfOW9dIdY0&phone_id=1&phone_type=work&phone=380970391999",
+							"protocol": "http",
+							"host": [
+								"{{site}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"update-user-profile"
+							],
+							"query": [
+								{
+									"key": "user_id",
+									"value": "5"
+								},
+								{
+									"key": "first_name",
+									"value": "User1499"
+								},
+								{
+									"key": "last_name",
+									"value": "Berder"
+								},
+								{
+									"key": "email",
+									"value": "antonios@gmail.com",
+									"disabled": true
+								},
+								{
+									"key": "password",
+									"value": "jfOW9dIdY0"
+								},
+								{
+									"key": "phone_id",
+									"value": "1"
+								},
+								{
+									"key": "phone_type",
+									"value": "work"
+								},
+								{
+									"key": "phone",
+									"value": "380970391999"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Change User Type",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "avatar",
+									"value": "data:image/png;base64,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",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://{{site}}/api/auth/change-user-type?user_id=3&user_type=admin",
+							"protocol": "http",
+							"host": [
+								"{{site}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"change-user-type"
+							],
+							"query": [
+								{
+									"key": "user_id",
+									"value": "3"
+								},
+								{
+									"key": "user_type",
+									"value": "admin"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Sing Up User",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "avatar",
+									"value": "data:image/png;base64,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",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://{{site}}/api/auth/sign-up?email=sontana440@gmail.com&password=1&password_confirmation=1&user_type=seller&user_status=active&first_name=jesica&last_name=berder&middle_name=middle_name&display_name=display_name&dob=2021-07-06&gender=male&race=race&interested_tags=some1&role_id=1&phone=380970391988&phone_type=work",
+							"protocol": "http",
+							"host": [
+								"{{site}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"sign-up"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "sontana440@gmail.com"
+								},
+								{
+									"key": "password",
+									"value": "1"
+								},
+								{
+									"key": "password_confirmation",
+									"value": "1"
+								},
+								{
+									"key": "user_type",
+									"value": "seller"
+								},
+								{
+									"key": "user_status",
+									"value": "active"
+								},
+								{
+									"key": "first_name",
+									"value": "jesica"
+								},
+								{
+									"key": "last_name",
+									"value": "berder"
+								},
+								{
+									"key": "middle_name",
+									"value": "middle_name"
+								},
+								{
+									"key": "display_name",
+									"value": "display_name"
+								},
+								{
+									"key": "dob",
+									"value": "2021-07-06"
+								},
+								{
+									"key": "gender",
+									"value": "male"
+								},
+								{
+									"key": "race",
+									"value": "race"
+								},
+								{
+									"key": "interested_tags",
+									"value": "some1"
+								},
+								{
+									"key": "role_id",
+									"value": "1"
+								},
+								{
+									"key": "phone",
+									"value": "380970391988"
+								},
+								{
+									"key": "phone_type",
+									"value": "work"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Login endpoint",
+			"item": [
+				{
+					"name": "Login User",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "X-Requested-With",
+								"value": "XMLHttpRequest",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{site}}/api/auth/login?email=antonios@gmail.com&password=jfOW9dIdY0",
+							"protocol": "http",
+							"host": [
+								"{{site}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"login"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "antonios@gmail.com"
+								},
+								{
+									"key": "password",
+									"value": "jfOW9dIdY0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Logout User",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiN2MwMzY5OWM2ZmUzMjU5OTAzNWE2NjQyZTVjNjYzMzliNDEzY2IxN2Q1YmJkNWU1N2EwYzBiY2U0NzMxYTAyYTIzZWFmNTM3YTQxMGUzNjgiLCJpYXQiOjE2MjU1NTk4NDcuOTQ3ODk1LCJuYmYiOjE2MjU1NTk4NDcuOTQ3OTA1LCJleHAiOjE2NTcwOTU4NDcuOTI4ODIxLCJzdWIiOiI0NSIsInNjb3BlcyI6W119.sIBdAax7dKVTOv2w15R7WCU31UyYL2AREI9XtWr4_wt2BVT6e_qeuMjDEq1dwhKZ3o4IefyUb6znN4_xf6VQM9WJ6KjdjB_1T_Zh0AZarZeX2wEWyck-1R-uLtTNkG89BrHCFJqr0tAiUnRjdj_PGBWfaW38KcWSrICuW-nd6GrsHuKF9Nw_YeXd8eOZt_psyFTPth8_XkkYQIPWP1PSOl-iP-hPZES9WuDZMzzFvBnzqtv_4Nl9gYNpmB91oVrFDL9CuC6ja3GVPkW5GdurR4gQ6SNAX_O9_XWgtJhCgEYBG_MyC9HLBsbXfwBwdWsTlZ12xBOEA9s1qAVTObdeqAUbLxLKxGR1O6EfaGxeAfmDljT65AyfORpg--5K3tq5MnjrNnEcHyB4xfDXSFQ0guY4dNm4JDFpw6TFvkd1cKG78X4UqM6Z94BRzODgok-W7k1XxCA0EowAnlwR5QXjpfMbkiE3S4r3NokFcJ_iy07-1rW_YwHaowqtvo0fjzrO0g50tmdSn97fRVRY33Kzd0keQ1Q1rD4Tn4x-yQ2W4Y81p_MAzlAKd2_c6pEAAh66A5SxgS9yHiMVOtPQeij_rI2UOILWS8_j6IGpdmwIUXPmJeVj9zwuX6M7W0ZttUNYwuH2mhtlDoRQhy-tZNXU3aEzVdmbkQNGOxlp6cJDvaQ",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://{{site}}/api/auth/logout?user_id=1",
+							"protocol": "http",
+							"host": [
+								"{{site}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"logout"
+							],
+							"query": [
+								{
+									"key": "user_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Reset the password endpoint",
+			"item": [
+				{
+					"name": "Reset Password",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://{{site}}/api/auth/password/reset?email=sontana@mail.com",
+							"protocol": "http",
+							"host": [
+								"{{site}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"password",
+								"reset"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "sontana@mail.com"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Auction/Bids",
+			"item": [
+				{
+					"name": "Store Auction",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "picture[0]",
+									"value": "data:image/png;base64,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",
+									"type": "text"
+								},
+								{
+									"key": "product_image[0]",
+									"value": "data:image/png;base64,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",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://{{site}}/api/auth/auction/store-auction?name=SomeNew50&start_bid=1.60&buyout_price=1.60&min_bid=1.50&basic_information=Some text&category_id=1&subcategory_id=2&certification_id=1&start_time=2021-06-28 09:00:00&end_time=2021-06-28 15:00:00&status=current&sku=Some2100&title=Some&color=Red&weight=50&short_disc=some some&long_disc=Some text&features=1&sale_price=500&retail_price=400&price=300&discount=30&discount_percent=10&payload=some&sale_type=auction&product_status=draft&seller_name=Test Product6&expiration_date=2021-07-08",
+							"protocol": "http",
+							"host": [
+								"{{site}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"auction",
+								"store-auction"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "SomeNew50"
+								},
+								{
+									"key": "start_bid",
+									"value": "1.60"
+								},
+								{
+									"key": "buyout_price",
+									"value": "1.60"
+								},
+								{
+									"key": "min_bid",
+									"value": "1.50"
+								},
+								{
+									"key": "basic_information",
+									"value": "Some text"
+								},
+								{
+									"key": "category_id",
+									"value": "1"
+								},
+								{
+									"key": "subcategory_id",
+									"value": "2"
+								},
+								{
+									"key": "certification_id",
+									"value": "1"
+								},
+								{
+									"key": "start_time",
+									"value": "2021-06-28 09:00:00"
+								},
+								{
+									"key": "end_time",
+									"value": "2021-06-28 15:00:00"
+								},
+								{
+									"key": "status",
+									"value": "current"
+								},
+								{
+									"key": "sku",
+									"value": "Some2100"
+								},
+								{
+									"key": "title",
+									"value": "Some"
+								},
+								{
+									"key": "color",
+									"value": "Red"
+								},
+								{
+									"key": "weight",
+									"value": "50"
+								},
+								{
+									"key": "short_disc",
+									"value": "some some"
+								},
+								{
+									"key": "long_disc",
+									"value": "Some text"
+								},
+								{
+									"key": "features",
+									"value": "1"
+								},
+								{
+									"key": "sale_price",
+									"value": "500"
+								},
+								{
+									"key": "retail_price",
+									"value": "400"
+								},
+								{
+									"key": "price",
+									"value": "300"
+								},
+								{
+									"key": "discount",
+									"value": "30"
+								},
+								{
+									"key": "discount_percent",
+									"value": "10"
+								},
+								{
+									"key": "payload",
+									"value": "some"
+								},
+								{
+									"key": "sale_type",
+									"value": "auction"
+								},
+								{
+									"key": "product_status",
+									"value": "draft"
+								},
+								{
+									"key": "seller_name",
+									"value": "Test Product6"
+								},
+								{
+									"key": "expiration_date",
+									"value": "2021-07-08"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Auction",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://{{site}}/api/auth/auction/update-auction?auction_id=4&name=Some11&start_bid=1.60&buyout_price=1.60&min_bid=1.50&gallery_id=1&basic_information=Some text&category_id=1&subcategory_id=2&certification_id=1&start_time=2021-06-28 09:00:00&end_time=2021-06-28 15:00:00&status=current",
+							"protocol": "http",
+							"host": [
+								"{{site}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"auction",
+								"update-auction"
+							],
+							"query": [
+								{
+									"key": "auction_id",
+									"value": "4"
+								},
+								{
+									"key": "name",
+									"value": "Some11"
+								},
+								{
+									"key": "start_bid",
+									"value": "1.60"
+								},
+								{
+									"key": "buyout_price",
+									"value": "1.60"
+								},
+								{
+									"key": "min_bid",
+									"value": "1.50"
+								},
+								{
+									"key": "gallery_id",
+									"value": "1"
+								},
+								{
+									"key": "basic_information",
+									"value": "Some text"
+								},
+								{
+									"key": "category_id",
+									"value": "1"
+								},
+								{
+									"key": "subcategory_id",
+									"value": "2"
+								},
+								{
+									"key": "certification_id",
+									"value": "1"
+								},
+								{
+									"key": "start_time",
+									"value": "2021-06-28 09:00:00"
+								},
+								{
+									"key": "end_time",
+									"value": "2021-06-28 15:00:00"
+								},
+								{
+									"key": "status",
+									"value": "current"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Auction",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://{{site}}/api/auth/auction/delete-auction?auction_id=4",
+							"protocol": "http",
+							"host": [
+								"{{site}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"auction",
+								"delete-auction"
+							],
+							"query": [
+								{
+									"key": "auction_id",
+									"value": "4"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Store Product",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "picture[0]",
+									"value": "data:image/png;base64,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",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://{{site}}/api/auth/product/store-product?category_id=1&subcategory_id=2&sku=65465629090q550&title=Test Product6&color=Red&weight=10&short_desc=some some&long_desc=Some text&features=1&sale_price=500&retail_price=400&price=300&discount=30&discount_percent=10&payload=some&sale_type=auction&status=draft&seller_name=Test Product6&expiration_date=2021-07-08 ",
+							"protocol": "http",
+							"host": [
+								"{{site}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"product",
+								"store-product"
+							],
+							"query": [
+								{
+									"key": "category_id",
+									"value": "1"
+								},
+								{
+									"key": "subcategory_id",
+									"value": "2"
+								},
+								{
+									"key": "sku",
+									"value": "65465629090q550"
+								},
+								{
+									"key": "title",
+									"value": "Test Product6"
+								},
+								{
+									"key": "color",
+									"value": "Red"
+								},
+								{
+									"key": "weight",
+									"value": "10"
+								},
+								{
+									"key": "short_desc",
+									"value": "some some"
+								},
+								{
+									"key": "long_desc",
+									"value": "Some text"
+								},
+								{
+									"key": "features",
+									"value": "1"
+								},
+								{
+									"key": "sale_price",
+									"value": "500"
+								},
+								{
+									"key": "retail_price",
+									"value": "400"
+								},
+								{
+									"key": "price",
+									"value": "300"
+								},
+								{
+									"key": "discount",
+									"value": "30"
+								},
+								{
+									"key": "discount_percent",
+									"value": "10"
+								},
+								{
+									"key": "payload",
+									"value": "some"
+								},
+								{
+									"key": "sale_type",
+									"value": "auction"
+								},
+								{
+									"key": "status",
+									"value": "draft"
+								},
+								{
+									"key": "seller_name",
+									"value": "Test Product6"
+								},
+								{
+									"key": "expiration_date",
+									"value": "2021-07-08 "
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Product",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image",
+									"value": "data:image/png;base64,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",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://{{site}}/api/auth/product/update-product?product_id=7&category_id=1&subcategory_id=2&title=Some2&color=Red&weight=10&short_desc=some some2&long_desc=Some text2&features=1&sale_price=500&retail_price=400&price=300&discount=30&discount_percent=10&payload=some&auction_id=1&sale_type=auction&status=draft&seller_name=Test Product6&expiration_date=2021-07-08",
+							"protocol": "http",
+							"host": [
+								"{{site}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"product",
+								"update-product"
+							],
+							"query": [
+								{
+									"key": "product_id",
+									"value": "7"
+								},
+								{
+									"key": "category_id",
+									"value": "1"
+								},
+								{
+									"key": "subcategory_id",
+									"value": "2"
+								},
+								{
+									"key": "sku",
+									"value": "Some9000",
+									"disabled": true
+								},
+								{
+									"key": "title",
+									"value": "Some2"
+								},
+								{
+									"key": "color",
+									"value": "Red"
+								},
+								{
+									"key": "weight",
+									"value": "10"
+								},
+								{
+									"key": "short_desc",
+									"value": "some some2"
+								},
+								{
+									"key": "long_desc",
+									"value": "Some text2"
+								},
+								{
+									"key": "features",
+									"value": "1"
+								},
+								{
+									"key": "sale_price",
+									"value": "500"
+								},
+								{
+									"key": "retail_price",
+									"value": "400"
+								},
+								{
+									"key": "price",
+									"value": "300"
+								},
+								{
+									"key": "discount",
+									"value": "30"
+								},
+								{
+									"key": "discount_percent",
+									"value": "10"
+								},
+								{
+									"key": "payload",
+									"value": "some"
+								},
+								{
+									"key": "auction_id",
+									"value": "1"
+								},
+								{
+									"key": "sale_type",
+									"value": "auction"
+								},
+								{
+									"key": "status",
+									"value": "draft"
+								},
+								{
+									"key": "seller_name",
+									"value": "Test Product6"
+								},
+								{
+									"key": "expiration_date",
+									"value": "2021-07-08"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Product",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://{{site}}/api/auth/product/delete-product?product_id=7",
+							"protocol": "http",
+							"host": [
+								"{{site}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"product",
+								"delete-product"
+							],
+							"query": [
+								{
+									"key": "product_id",
+									"value": "7"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get the Auction info",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://{{site}}/api/auth/auction/get-auction-info?auction_id=1",
+							"protocol": "http",
+							"host": [
+								"{{site}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"auction",
+								"get-auction-info"
+							],
+							"query": [
+								{
+									"key": "auction_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get the bidders list",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://{{site}}/api/auth/bidder/get-bidders-list?auction_id=2",
+							"protocol": "http",
+							"host": [
+								"{{site}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"bidder",
+								"get-bidders-list"
+							],
+							"query": [
+								{
+									"key": "auction_id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get the product info for the auction",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://{{site}}/api/auth/auction/get-auction-product?auction_id=1&product_id=1",
+							"protocol": "http",
+							"host": [
+								"{{site}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"auction",
+								"get-auction-product"
+							],
+							"query": [
+								{
+									"key": "auction_id",
+									"value": "1"
+								},
+								{
+									"key": "product_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get the Bids history",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://{{site}}/api/auth/bidder/get-bids-history?auction_id=2",
+							"protocol": "http",
+							"host": [
+								"{{site}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"bidder",
+								"get-bids-history"
+							],
+							"query": [
+								{
+									"key": "auction_id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get the auction status",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://{{site}}/api/auth/auction/get-auction-status?auction_id=1",
+							"protocol": "http",
+							"host": [
+								"{{site}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"auction",
+								"get-auction-status"
+							],
+							"query": [
+								{
+									"key": "auction_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AddBid",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://{{site}}/api/auth/bidder/add-bid?auction_id=3&bid=1.60&bid_timestamp=2021-06-29 11:44:44",
+							"protocol": "http",
+							"host": [
+								"{{site}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"bidder",
+								"add-bid"
+							],
+							"query": [
+								{
+									"key": "auction_id",
+									"value": "3"
+								},
+								{
+									"key": "bid",
+									"value": "1.60"
+								},
+								{
+									"key": "bid_timestamp",
+									"value": "2021-06-29 11:44:44"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "My auctions",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://{{site}}/api/auth/auction/my-auctions?user_id=3",
+							"protocol": "http",
+							"host": [
+								"{{site}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"auction",
+								"my-auctions"
+							],
+							"query": [
+								{
+									"key": "user_id",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Orders",
+			"item": [
+				{
+					"name": "Get the Orders list",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://{{site}}/api/auth/order/get-orders-list?page=3&limit=15",
+							"protocol": "http",
+							"host": [
+								"{{site}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"order",
+								"get-orders-list"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "3"
+								},
+								{
+									"key": "limit",
+									"value": "15"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get the Orders by name",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://{{site}}/api/auth/order/get-orders-list-by-user?page=5&limit=15&user_id=3",
+							"protocol": "http",
+							"host": [
+								"{{site}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"order",
+								"get-orders-list-by-user"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "5"
+								},
+								{
+									"key": "limit",
+									"value": "15"
+								},
+								{
+									"key": "user_id",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get the Orders status",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://{{site}}/api/auth/order/get-order-status?order_id=1",
+							"protocol": "http",
+							"host": [
+								"{{site}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"order",
+								"get-order-status"
+							],
+							"query": [
+								{
+									"key": "order_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get the Order detail",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://{{site}}/api/auth/order/get-order-details?order_id=1",
+							"protocol": "http",
+							"host": [
+								"{{site}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"order",
+								"get-order-details"
+							],
+							"query": [
+								{
+									"key": "order_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get the shipping info",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://{{site}}/api/auth/order/get-shipping-info?order_id=10",
+							"protocol": "http",
+							"host": [
+								"{{site}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"order",
+								"get-shipping-info"
+							],
+							"query": [
+								{
+									"key": "order_id",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get the shipping list",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://{{site}}/api/auth/order/get-shipments-list",
+							"protocol": "http",
+							"host": [
+								"{{site}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"order",
+								"get-shipments-list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add to the card(order)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://{{site}}/api/auth/order/store-order?seller_id=1&order_date=2021-07-08&delivery_date=2021-07-08&order_notes=notes2&long_desc=long notes&payment_status=pending&payment_error_log=log&subtotal=100&shipping_amount=50&tax_rate=5&tax_amount=10&total=165&product_id[0]=35&shipping_id=1&item_status=pay&status=sold",
+							"protocol": "http",
+							"host": [
+								"{{site}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"order",
+								"store-order"
+							],
+							"query": [
+								{
+									"key": "seller_id",
+									"value": "1"
+								},
+								{
+									"key": "order_date",
+									"value": "2021-07-08"
+								},
+								{
+									"key": "delivery_date",
+									"value": "2021-07-08"
+								},
+								{
+									"key": "order_notes",
+									"value": "notes2"
+								},
+								{
+									"key": "long_desc",
+									"value": "long notes"
+								},
+								{
+									"key": "payment_status",
+									"value": "pending"
+								},
+								{
+									"key": "payment_error_log",
+									"value": "log"
+								},
+								{
+									"key": "subtotal",
+									"value": "100"
+								},
+								{
+									"key": "shipping_amount",
+									"value": "50"
+								},
+								{
+									"key": "tax_rate",
+									"value": "5"
+								},
+								{
+									"key": "tax_amount",
+									"value": "10"
+								},
+								{
+									"key": "total",
+									"value": "165"
+								},
+								{
+									"key": "product_id[0]",
+									"value": "35"
+								},
+								{
+									"key": "product_id[1]",
+									"value": "38",
+									"disabled": true
+								},
+								{
+									"key": "shipping_id",
+									"value": "1"
+								},
+								{
+									"key": "item_status",
+									"value": "pay"
+								},
+								{
+									"key": "status",
+									"value": "sold"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete to the card(order)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://{{site}}/api/auth/order/delete-order?order_id=10",
+							"protocol": "http",
+							"host": [
+								"{{site}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"order",
+								"delete-order"
+							],
+							"query": [
+								{
+									"key": "order_id",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Checkout Functionality",
+			"item": [
+				{
+					"name": "Get the order price",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://{{site}}/api/auth/order/get-order-price?order_id=1",
+							"protocol": "http",
+							"host": [
+								"{{site}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"order",
+								"get-order-price"
+							],
+							"query": [
+								{
+									"key": "order_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get the payment info",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://{{site}}/api/auth/payment/get-payment-info?order_id=1",
+							"protocol": "http",
+							"host": [
+								"{{site}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"payment",
+								"get-payment-info"
+							],
+							"query": [
+								{
+									"key": "order_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update the payment info",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://{{site}}/api/auth/payment/update-payment-info?payment_id=1&card_number=4780384938118888&month=07&year=21&cvc=493&owner_name=Ricardo Robers&country=Sweden&phone_number=79029250421",
+							"protocol": "http",
+							"host": [
+								"{{site}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"payment",
+								"update-payment-info"
+							],
+							"query": [
+								{
+									"key": "payment_id",
+									"value": "1"
+								},
+								{
+									"key": "card_number",
+									"value": "4780384938118888"
+								},
+								{
+									"key": "month",
+									"value": "07"
+								},
+								{
+									"key": "year",
+									"value": "21"
+								},
+								{
+									"key": "cvc",
+									"value": "493"
+								},
+								{
+									"key": "owner_name",
+									"value": "Ricardo Robers"
+								},
+								{
+									"key": "country",
+									"value": "Sweden"
+								},
+								{
+									"key": "phone_number",
+									"value": "79029250421"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Payouts",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://{{site}}/api/auth/payment/get-payouts",
+							"protocol": "http",
+							"host": [
+								"{{site}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"payment",
+								"get-payouts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Filter payouts",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://{{site}}/api/auth/payment/filter-payouts?order_id=5&date=2021-07-27&buyer_name=some",
+							"protocol": "http",
+							"host": [
+								"{{site}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"payment",
+								"filter-payouts"
+							],
+							"query": [
+								{
+									"key": "order_id",
+									"value": "5"
+								},
+								{
+									"key": "date",
+									"value": "2021-07-27"
+								},
+								{
+									"key": "buyer_name",
+									"value": "some"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Support and Knowledge base",
+			"item": [
+				{
+					"name": "Get the knowledge bases list",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://{{site}}/api/auth/knowledge/get-knowledge-bases-list?page=1",
+							"protocol": "http",
+							"host": [
+								"{{site}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"knowledge",
+								"get-knowledge-bases-list"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get the knowledge base detales",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://{{site}}/api/auth/knowledge/get-knowledge-base-details?knowledge_base_id=199",
+							"protocol": "http",
+							"host": [
+								"{{site}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"knowledge",
+								"get-knowledge-base-details"
+							],
+							"query": [
+								{
+									"key": "knowledge_base_id",
+									"value": "199"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Send the report",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"value": "data:image/png;base64,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",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://{{site}}/api/auth/report/send-report?email=user10@gmail.com&subject=subject&user=3&message=Message",
+							"protocol": "http",
+							"host": [
+								"{{site}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"report",
+								"send-report"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "user10@gmail.com"
+								},
+								{
+									"key": "subject",
+									"value": "subject"
+								},
+								{
+									"key": "user",
+									"value": "3"
+								},
+								{
+									"key": "message",
+									"value": "Message"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Messaging",
+			"item": [
+				{
+					"name": "Get the chat lists",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://{{site}}/api/auth/messaging/get-chat-lists?page=1&limit=15&user_id=3",
+							"protocol": "http",
+							"host": [
+								"{{site}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"messaging",
+								"get-chat-lists"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "limit",
+									"value": "15"
+								},
+								{
+									"key": "user_id",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get the message status",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://{{site}}/api/auth/messaging/get-message-status?message_id=1",
+							"protocol": "http",
+							"host": [
+								"{{site}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"messaging",
+								"get-message-status"
+							],
+							"query": [
+								{
+									"key": "message_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create the chat",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://{{site}}/api/auth/messaging/create-chat?name=Chat Name&user_to=7",
+							"protocol": "http",
+							"host": [
+								"{{site}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"messaging",
+								"create-chat"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Chat Name"
+								},
+								{
+									"key": "user_to",
+									"value": "7"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete the chat",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://{{site}}/api/auth/messaging/delete-chat?chat_id=1",
+							"protocol": "http",
+							"host": [
+								"{{site}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"messaging",
+								"delete-chat"
+							],
+							"query": [
+								{
+									"key": "chat_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Sent the message",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://{{site}}/api/auth/messaging/sent-message?user_id=3&chat_id=5&message=some text3",
+							"protocol": "http",
+							"host": [
+								"{{site}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"messaging",
+								"sent-message"
+							],
+							"query": [
+								{
+									"key": "user_id",
+									"value": "3"
+								},
+								{
+									"key": "chat_id",
+									"value": "5"
+								},
+								{
+									"key": "message",
+									"value": "some text3"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete the message",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://{{site}}/api/auth/messaging/delete-message?message_id=56&user_id=3",
+							"protocol": "http",
+							"host": [
+								"{{site}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"messaging",
+								"delete-message"
+							],
+							"query": [
+								{
+									"key": "message_id",
+									"value": "56"
+								},
+								{
+									"key": "user_id",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get the chat messages",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://{{site}}/api/auth/messaging/get-chat-messages?chat_id=5&page=1",
+							"protocol": "http",
+							"host": [
+								"{{site}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"messaging",
+								"get-chat-messages"
+							],
+							"query": [
+								{
+									"key": "chat_id",
+									"value": "5"
+								},
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add participants to the chat",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://{{site}}/api/auth/messaging/add-participants-chat?chat_id=60a60&user_id=16a6a",
+							"protocol": "http",
+							"host": [
+								"{{site}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"messaging",
+								"add-participants-chat"
+							],
+							"query": [
+								{
+									"key": "chat_id",
+									"value": "60a60"
+								},
+								{
+									"key": "user_id",
+									"value": "16a6a"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Seller Profile",
+			"item": [
+				{
+					"name": "Store work status on/off",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://{{site}}/api/auth/seller-profile/work-status?seller_id=3&status=1",
+							"protocol": "http",
+							"host": [
+								"{{site}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"seller-profile",
+								"work-status"
+							],
+							"query": [
+								{
+									"key": "seller_id",
+									"value": "3"
+								},
+								{
+									"key": "status",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Seller Dashboard",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://{{site}}/api/auth/seller-profile/dashboard?seller_id=3",
+							"protocol": "http",
+							"host": [
+								"{{site}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"seller-profile",
+								"dashboard"
+							],
+							"query": [
+								{
+									"key": "seller_id",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "My saved items",
+			"item": [
+				{
+					"name": "add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://{{site}}/api/auth/save-items/add?user_id=3&product_id=1a",
+							"protocol": "http",
+							"host": [
+								"{{site}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"save-items",
+								"add"
+							],
+							"query": [
+								{
+									"key": "user_id",
+									"value": "3"
+								},
+								{
+									"key": "product_id",
+									"value": "1a"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "receive",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://{{site}}/api/auth/save-items/receive?user_id=3",
+							"protocol": "http",
+							"host": [
+								"{{site}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"save-items",
+								"receive"
+							],
+							"query": [
+								{
+									"key": "user_id",
+									"value": "3"
+								},
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://{{site}}/api/auth/save-items/delete?user_id=3&product_id=2",
+							"protocol": "http",
+							"host": [
+								"{{site}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"save-items",
+								"delete"
+							],
+							"query": [
+								{
+									"key": "user_id",
+									"value": "3"
+								},
+								{
+									"key": "product_id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Rating",
+			"item": [
+				{
+					"name": "Add Star Rating",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://{{site}}/api/auth/rating/add-star-rating?user_id=5&product_id=3&order_id=9&rating=4.4",
+							"protocol": "http",
+							"host": [
+								"{{site}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"rating",
+								"add-star-rating"
+							],
+							"query": [
+								{
+									"key": "user_id",
+									"value": "5"
+								},
+								{
+									"key": "product_id",
+									"value": "3"
+								},
+								{
+									"key": "order_id",
+									"value": "9"
+								},
+								{
+									"key": "rating",
+									"value": "4.4"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Review",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://{{site}}/api/auth/rating/add-review?user_id=5&product_id=3&order_id=9&review=something",
+							"protocol": "http",
+							"host": [
+								"{{site}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"rating",
+								"add-review"
+							],
+							"query": [
+								{
+									"key": "user_id",
+									"value": "5"
+								},
+								{
+									"key": "product_id",
+									"value": "3"
+								},
+								{
+									"key": "order_id",
+									"value": "9"
+								},
+								{
+									"key": "review",
+									"value": "something"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Product Rating",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://{{site}}/api/auth/rating/get-product-rating?product_id=3",
+							"protocol": "http",
+							"host": [
+								"{{site}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"rating",
+								"get-product-rating"
+							],
+							"query": [
+								{
+									"key": "product_id",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Product Review",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://{{site}}/api/auth/rating/get-product-review?product_id=3",
+							"protocol": "http",
+							"host": [
+								"{{site}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"rating",
+								"get-product-review"
+							],
+							"query": [
+								{
+									"key": "product_id",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Other",
+			"item": [
+				{
+					"name": "Get terms and conditions",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://{{site}}/api/auth/get-terms-conditions",
+							"protocol": "http",
+							"host": [
+								"{{site}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"get-terms-conditions"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNjYzNzdkYWNhZGNlZTI0YTRjYWZiYmMxMjEyMTI5ODg2ZDM5ZGViMDdjYjVlYTg5NTQ5MWQ0ZmM0MGEyN2JkNWNkMGI1NDg2ZWIwOTc3YTAiLCJpYXQiOjE2MzAzMjcyOTMuNTU0NTIyLCJuYmYiOjE2MzAzMjcyOTMuNTU0NTMzLCJleHAiOjE2NjE4NjMyOTMuNTI5OTM3LCJzdWIiOiI1Iiwic2NvcGVzIjpbXX0.Hq8PsebXWcWDVdpXqUXJQrUuk-sRh0X_uL-nPFSMvh4CsKgHUumL1wUlnhDKzvNZ4-BZbRYh68UDjlLqQuIgy33bI9gHdua72iupoc83wWJhacXU-DE2LN0-hH-lu8zsdiQ14KH4GYZ8fwkVmZvDpQD80_fcdVkuQOs1bP2P0AhxORW5BNCc3uWMG_zQTOu-9L9IVX_QdpOotMSPbwRI-L0KiMqaH7buuroGqTuLPOE-V5hCzTKKoWPq4HeBbO9puZoHMEErLWMWfl8xZL9X45HOkW2Azy0PXG3Hn1v6y_LyTVzdY00aeJhrbtI8jpSYVOkIVL6uMfdYYzbjl_1q5hGrjQ83GO2UhKtop00ZBZLK4QJmRwCvTme9ySbkr_ioFcAcpY5apnT-D1VhaadefuWilQ3eiAPoMi7KDUlK36jN9vsccfUWo86jAm3mBsLAUikMFvavf8kDiwreDwYCGeEk_XuweCpZpp0Vbpig-1ffMfKaakhVk2kguF6s6TLmMDRusLMzcXZQblw0Q0L6KMIpZ68gLF1WR3nQtjI-Akle-lI1rkTqt41yelAp9Cei_VqcdKIckQZ37h_5ruUk2CQDbgItgoMlzBb3cBtU6Vakm690xBqQPJXyU9KwuZ2T53M052W7Dl9Bx3ynHbSGwWDRjB0cYdfg9wuzH_Hsq0Q",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "site",
+			"value": "mirus-develop.loc"
+		},
+		{
+			"key": "site",
+			"value": "mirus"
+		},
+		{
+			"key": "site",
+			"value": "mirus.project-release.info"
+		},
+		{
+			"key": "site",
+			"value": "mirus4.project-release.info"
+		},
+		{
+			"key": "site",
+			"value": "mirus.freshinup.com"
+		},
+		{
+			"key": "site",
+			"value": "mirus-marketplace.loc"
+		},
+		{
+			"key": "site",
+			"value": "mirus2.loc"
+		}
+	]
+}
